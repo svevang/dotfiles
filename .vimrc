@@ -105,4 +105,11 @@ set pastetoggle=<F2>
 "set background=light
 "colorscheme solarized
 
+"colorscheme morning
 "colorscheme evening
+
+map <C-t><up> :tabr<cr>
+map <C-t><down> :tabl<cr>
+map <C-t><left> :tabp<cr>
+map <C-t><right> :tabn<cr>
+au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
