@@ -95,12 +95,12 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
-source ~/.aliases
-export PIP_LOG_FILE=/var/tmp/pip-log.txt
-export PIP_DOWNLOAD_CACHE=/va/tmp/pip_cache
-export EDITOR=vim
+if [ -f ~/.aliases ]; then
+  . ~/.aliases
+fi
 
 # set up a way to launch commands within screen
+# run like `> POST_INIT="source /some/venv/bin/activate" screen`
 if [[ $POST_INIT ]]; then
   eval $POST_INIT
 fi
@@ -120,4 +120,8 @@ if [ -d ~/.rbenv/bin ]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
   eval "$(rbenv init -)"
 fi
+
+export PIP_LOG_FILE=/var/tmp/pip-log.txt
+export PIP_DOWNLOAD_CACHE=/va/tmp/pip_cache
+export EDITOR=vim
 
