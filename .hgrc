@@ -4,6 +4,10 @@ verbose=true
 
 [extensions]
 bookmarks =
+rebase = 
 
 [bookmarks]
 track.current = True
+
+[alias]
+nudge = push --rev .
