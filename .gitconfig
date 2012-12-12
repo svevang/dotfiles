@@ -1,0 +1,8 @@
+[user]
+	name = Sam Vevang
+	mail = sam.vevang@gmail.com
+	email = sam.vevang@gmail.com
+[core]
+    xcludesfile = ~/.gitignore
+[push]
+      default = upstream
