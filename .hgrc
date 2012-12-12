@@ -1,3 +1,9 @@
 [ui]
 username = Sam V <sam.vevang@gmail.com>
 verbose=true
+
+[extensions]
+bookmarks =
+
+[bookmarks]
+track.current = True
