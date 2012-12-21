@@ -122,6 +122,6 @@ if [ -d ~/.rbenv/bin ]; then
 fi
 
 export PIP_LOG_FILE=/var/tmp/pip-log.txt
-export PIP_DOWNLOAD_CACHE=/va/tmp/pip_cache
+export PIP_DOWNLOAD_CACHE=/var/tmp/pip_cache
 export EDITOR=vim
 
