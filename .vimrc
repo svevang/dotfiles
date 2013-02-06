@@ -26,7 +26,7 @@ if has("vms")
 else
   set backup		" keep a backup file
 endif
-set history=50		" keep 50 lines of command line history
+set history=500		" keep 500 lines of command line history
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
@@ -94,12 +94,14 @@ if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
 		  \ | wincmd p | diffthis
 endif
-set tabstop=2
-set shiftwidth=2
-set expandtab
+
 
 colorscheme koehler
 set pastetoggle=<F2>
+
+setlocal tabstop=4
+setlocal shiftwidth=4
+setlocal expandtab
 
 "syntax enable
 "set background=light
@@ -112,4 +114,5 @@ map <C-t><up> :tabr<cr>
 map <C-t><down> :tabl<cr>
 map <C-t><left> :tabp<cr>
 map <C-t><right> :tabn<cr>
-au FileType python setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
+
+execute pathogen#infect()
