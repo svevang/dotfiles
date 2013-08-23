@@ -1,8 +1,18 @@
 [user]
-	name = Sam Vevang
-	mail = sam.vevang@gmail.com
-	email = sam.vevang@gmail.com
+  name = Sam Vevang
+  mail = sam.vevang@gmail.com
+  email = sam.vevang@gmail.com
 [core]
-    xcludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore
 [push]
-    default = current
+  default = upstream
+
+[alias]
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  df = diff
+  lg = log -p
+[merge]
+  ff = no
