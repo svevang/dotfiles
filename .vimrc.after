@@ -1,0 +1,8 @@
+set nonumber
+colorscheme koehler
+set pastetoggle=<F2>
+set listchars=""
+
+if has('mouse')
+    set mouse=nv
+endif
