@@ -14,5 +14,5 @@
   co = checkout
   df = diff
   lg = log -p
-[merge]
-  ff = no
+#[merge]
+#  ff = no
