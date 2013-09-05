@@ -1,0 +1,13 @@
+--nosql
+--ignore-file=match:tags
+--ignore-dir=node_modules
+--ignore-dir=.env
+--ignore-dir=tmp
+--ignore-dir=build
+--ignore-dir=log
+--ignore-dir=tiny_mce
+--ignore-dir=tmp/capybara/
+--type-add=ruby=.haml,.rake,.rsel,.feature
+--type-add=js=.coffee
+--type-set=jade=.jade
+--type-set=sass=.scss
