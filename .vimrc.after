@@ -6,3 +6,5 @@ set listchars=""
 if has('mouse')
     set mouse=nv
 endif
+
+let g:syntastic_python_checker_args='--ignore=E501'
