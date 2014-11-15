@@ -2,6 +2,7 @@
 --ignore-file=match:tags
 --ignore-dir=node_modules
 --ignore-dir=.env
+--ignore-dir=.build
 --ignore-dir=tmp
 --ignore-dir=build
 --ignore-dir=log
