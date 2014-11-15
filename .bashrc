@@ -37,8 +37,8 @@ if [ -f ~/.nvm/nvm.sh ]; then
   nvm use v0.10.8 >> /dev/null
 fi
 
-if [ -f ~/.aliases ]; then
-  . ~/.aliases
+if [ -f ~/.bash_aliases ]; then
+  . ~/.bash_aliases
 fi
 
 if [ -d ~/.rbenv/bin ]; then
