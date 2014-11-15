@@ -37,6 +37,10 @@ if [ -f ~/.nvm/nvm.sh ]; then
   nvm use v0.10.8 >> /dev/null
 fi
 
+if [ -f ~/.aliases ]; then
+  . ~/.aliases
+fi
+
 if [ -d ~/.rbenv/bin ]; then
   # ruby version manager
   export PATH="$HOME/.rbenv/bin:$PATH"
