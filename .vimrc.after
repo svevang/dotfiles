@@ -11,4 +11,7 @@ endif
 
 let g:syntastic_python_flake8_args='--ignore=E501,E302,E128,W404'
 
+autocmd Filetype json set conceallevel=0
+autocmd Filetype javascript setlocal ts=4 sts=4 sw=4
+
 colorscheme koehler
