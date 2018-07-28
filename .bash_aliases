@@ -1,0 +1,6 @@
+alias be='bundle exec'
+alias gsu='git submodule update --recursive'
+alias ack='ag'
+alias berb='be ruby -I'\''lib:test'\'''
+alias gitlatest='git for-each-ref --sort=-committerdate refs/heads/ | less'
+alias grpe='grep'
