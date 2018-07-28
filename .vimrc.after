@@ -1,4 +1,4 @@
-set nonumber
+"set nonumber
 
 syntax enable
 
@@ -20,3 +20,14 @@ colorscheme koehler
 
 let g:jsx_ext_required = 0
 let g:syntastic_javascript_checkers = ['eslint']
+
+set wildmode=longest,list
+
+hi StatusLine ctermbg=black ctermfg=white
+
+hi TabLineSel  ctermfg=gray ctermbg=Magenta
+hi TabLine     ctermfg=DarkGray ctermbg=black
+hi TabLineFill ctermfg=white ctermbg=DarkGray
+
+"viw\gg to ack grep for the current word
+vnoremap <leader>gg y:Ack <c-r>"<cr>
