@@ -1,12 +1,12 @@
 [user]
-  name = Sam Vevang
   mail = sam.vevang@gmail.com
+  name = Sam Vevang
   email = sam.vevang@gmail.com
 [core]
-  excludesfile = ~/.gitignore
+  excludesfile = /Users/sam/.gitignore_global
+  pager = less -FXRS -x2
 [push]
-  default = upstream
-
+  default = simple
 [alias]
   st = status
   ci = commit
@@ -14,5 +14,39 @@
   co = checkout
   df = diff
   lg = log -p
+  di = diff
+  sta = stash
+  llog = log --date=local
+  flog = log --pretty=fuller --decorate
+  lol = log --graph --decorate --oneline
+  lola = log --graph --decorate --oneline --all
+  blog = log origin/master... --left-right
+  ds = diff --staged
+  fixup = commit --fixup
+  squash = commit --squash
+  unstage = reset HEAD
+  rum = rebase master@{u}
 #[merge]
 #  ff = no
+[apply]
+  whitespace = nowarn
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+  ui = auto
+[branch]
+  autosetupmerge = true
+  autosetuprebase = always
+[rebase]
+  autosquash = true
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+[filter "media"]
+  clean = git media clean %f
+  smudge = git media smudge %f
+  required = true
