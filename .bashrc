@@ -72,3 +72,8 @@ export CARGO_BIN_PATH=$HOME/.cargo/bin/
 export PATH=$PATH:$CARGO_BIN_PATH
 
 export ERL_AFLAGS="-kernel shell_history enabled"
+
+if [ -e $HOME/.bashrc.local ]
+then
+  source $HOME/.bashrc.local
+fi
